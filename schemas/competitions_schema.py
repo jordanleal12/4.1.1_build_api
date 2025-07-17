@@ -1,7 +1,7 @@
 """Creates Schema for Competition model using Auto Schema"""
 
 from marshmallow_sqlalchemy import SQLAlchemyAutoSchema
-from main import db  # ma
+from extensions import db  # ma
 from models.competitions import Competition
 
 # class CompetitionSchema(ma.Schema):

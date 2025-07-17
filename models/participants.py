@@ -1,6 +1,6 @@
 """Model for creating participants table"""
 
-from main import db
+from extensions import db
 
 
 class Participant(db.Model):

@@ -1,6 +1,6 @@
 """Model for creating competition table"""
 
-from main import db
+from extensions import db
 
 
 class Competition(db.Model):

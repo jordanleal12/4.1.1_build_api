@@ -1,7 +1,7 @@
 """Creates Schema for Participants model using Auto Schema"""
 
 from marshmallow_sqlalchemy import SQLAlchemyAutoSchema
-from main import db  # ma
+from extensions import db  # ma
 from models.participants import Participant
 
 # class ParticipantSchema(ma.Schema):
