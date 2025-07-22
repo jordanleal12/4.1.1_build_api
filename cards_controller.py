@@ -17,12 +17,7 @@ def get_cards():
 
 @cards.route("/", methods=["POST"])
 def create_card():
-    card_fields = card_schema.load(request.json)
-    new_card = Card()
-    new_card.title = card_fields["title"]
-    new_card.description = card_fields["description"]
-    new_card.status = card_fields["status"]
-    new_card.priority = card_fields["priority"]
+    new_card = card_schema.load(request.json)
     new_card.date = date.today()
 
     db.session.add(new_card)
