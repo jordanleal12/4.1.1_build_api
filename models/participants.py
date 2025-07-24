@@ -4,7 +4,7 @@ from extensions import db
 
 
 class Participant(db.Model):
-    __tablename__ = "Participants"  # Creates table name
+    __tablename__ = "participants"  # Creates table name
 
     id = db.Column(
         db.Integer, primary_key=True
@@ -12,3 +12,4 @@ class Participant(db.Model):
     name = db.Column(db.String(), nullable=False)
     address = db.Column(db.String(), nullable=False)
     phone = db.Column(db.String(), nullable=False)
+    participations = db.relationship("Participation", back_populates="participant")
