@@ -3,6 +3,9 @@
 from flask import Flask
 from flask_marshmallow import Marshmallow
 from extensions import db
+from dotenv import load_dotenv
+
+load_dotenv()  # Loads environment variables from .env file
 
 ma = Marshmallow()  # Creates marshmallow object, allowing schema use
 
